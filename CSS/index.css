@@ -1,0 +1,161 @@
+.main-button{
+  border: 0px;
+  width: 20rem;
+  height: 5rem;
+  clip-path: polygon(93% 0%, 100% 50%, 93% 100%, 7% 100%, 0% 50%, 7% 0%);
+  background-color: #2E2473;
+  font-size: large;
+  background-image: url("../IMG/background02.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration:none; 
+}
+
+.main-button:hover{
+  background-image: url("../IMG/background01.png");
+}
+
+main{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+main div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  margin-left: 3.5rem;
+}
+main div h1{
+  font-size: 4rem;
+  text-transform: capitalize;
+}
+
+main div .main-button{
+  font-size: larger;
+  font-family: "Oxanium";
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  width: 70%;
+  height: 4rem;
+}
+
+figure{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 43%;
+  margin-right: 5rem;
+}
+
+figure img{
+  max-width: 100%;
+  height: auto;
+}
+
+figure img{
+  width: 100%;
+}
+
+@media only screen and (min-width:1061px) {
+  main div{
+    width: 40%;
+    margin-left: 3.5rem;
+  }
+
+  main div h1{
+    font-size: 4rem;
+  }
+  
+  main div .main-button{
+    margin-top: 3rem;
+    width: 70%;
+    clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%, 10% 0%);
+    height: 5rem;
+    font-size: 2rem;
+  }
+  
+  figure{
+    width: 43%;
+    margin-right: 5rem;
+  }
+  
+  figure img{
+    max-width: 100%;
+    height: auto;
+  }
+  
+  figure img{
+    width: 100%;
+  }
+
+  .logo h3{
+    font-family: "Oxanium";
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+  .logo img{
+    width: 4rem;
+    height: auto;
+  }
+
+  nav .menu{
+    height: 2.8rem;
+    margin-left: 2rem;
+  }
+  nav .carrinho{
+    height: 4rem;
+    margin-right: 2rem;
+  }
+  
+}
+
+@media only screen and (max-width:959px) {
+  main div{
+    width: 100%;
+    margin-left: 1rem;
+  }
+  main div h1{
+    font-size: 3rem;
+  }
+  
+  main div .main-button{
+    font-size: larger;
+    margin-top: 2rem;
+    clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%, 10% 0%);
+    height: 4rem;
+    width: 70%;
+  }
+  
+  figure{
+    width: 100%;
+    margin-right: 0rem;
+  }
+  
+  figure img{
+    max-width: 100%;
+    height: auto;
+  }
+  
+  figure img{
+    width: 100%;
+  }
+
+  nav .menu{
+    height: 40%;
+    margin: 0.5rem;
+  }
+  nav .carrinho{
+    height: 60%;
+    margin: 0.5rem;
+  }
+}
+

@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h4, p, span, .text{
+    font-family: "JetBrains Mono", "Oxanium";
+    color: #9FD923;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #0D0D0D;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    height: 5.5rem;
+    padding: 0.25rem 0.75rem;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../IMG/background02.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+nav .main-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+  
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-bottom: 1px solid ;
+}
+  
+.logo h3{
+    font-family: "Oxanium";
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.logo img{
+    width: 3rem;
+    height: auto;
+}
+  
+nav .menu{
+    height: 40%;
+    margin: 0.5rem;
+}
+  
+nav .menu:hover{
+    opacity: 0.6;
+}
+  
+nav .carrinho{
+    height: 60%;
+    margin: 0.5rem;
+}
+  
+nav .carrinho:hover{
+    opacity: 0.6;
+}
+  
+.menu-icon {
+    cursor: pointer;
+}
+
+.footer .text{
+    font-size: small;
+    margin: 0.2rem;
+    border-bottom: solid #9FD923 1px;
+}
+  
+.footer-container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    background-color: #2E2473;
+    color: #fff;
+    padding: 1rem;
+}
+  
+.footer-section {
+    margin: 0.3rem;
+    flex: 1 1 300px;
+    max-width: 35rem;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-section p,
+.footer-section span, 
+.footer-section a {
+    color: #ccc;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+@media only screen and (min-width:1061px) {  
+    .logo h3{
+      font-family: "Oxanium";
+      font-size: 2.5rem;
+      font-weight: bolder;
+      text-transform: uppercase;
+    }
+    .logo img{
+      width: 4rem;
+      height: auto;
+    }
+  
+    nav .menu{
+      height: 2.8rem;
+      margin-left: 2rem;
+    }
+    nav .carrinho{
+      height: 4rem;
+      margin-right: 2rem;
+    }
+    
+}
+  
+@media only screen and (max-width:959px) {
+    nav .menu{
+      height: 40%;
+      margin: 0.5rem;
+    }
+    nav .carrinho{
+      height: 60%;
+      margin: 0.5rem;
+    }
+}

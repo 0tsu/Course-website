@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/geral.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="../CSS/index.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="../CSS/menuHamburger.css" type="text/css" media="screen">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
@@ -11,45 +13,55 @@
 </head>
 <body>
   <nav>
-    <a href="#"><img class="menu" src="../IMG/menu.svg" alt=""></a>
-    <div class="text logo"><h3>Ucsal Cursos</h3> <img src="../IMG/lampanda.svg" alt=""></div>
-    <a href="#"><img class="carrinho" src="../IMG/carrinho.svg" alt=""></a>
+    <section class="main-menu">
+      <a href="#" class="menu-icon"><img class="menu" src="../IMG/menu.svg" alt=""></a>
+      <div class="text logo"><h3>Ucsal Cursos</h3> <img src="../IMG/lampanda.svg" alt=""></div>
+      <a href="./Carrinho.html"><img class="carrinho" src="../IMG/carrinho.svg" alt=""></a>
+    </section>
+
+    <section class="menu-items">
+      <a href="./index.html">Home</a>
+      <a href="./Cursos.html">Cursos</a>
+      <a href="./LoginCadastro.html">Login / cadastro</a>
+    </section>
   </nav>
 
   <main>
     <div>
       <h1 class="text">O melhores cursos online você encontra aqui!</h1>
-      <button class="text">Veja nossos cursos</button>
+      <a href="./Cursos.html" class="main-button text">Veja nossos cursos</a>
     </div>
 
     <figure>
       <img src="../IMG/DionysusAndCharon.svg" alt="Dionysus">
     </figure>
-
   </main>
+
 
   <footer>
     <div class="footer-container">
         <div class="footer-section">
-            <h4>Trabalho feito por:</h4>
+            <h4>Trabalho feito por</h4>
             <span>Fausto Mota Santos Alves da Cruz</span> |
             <span>Sarah Ramos Moura Costa Doria</span> |
             <span>Itauan Santos de Jesus</span> |
             <span>Caio Felipe Conceição Santos</span> 
         </div>
         <div class="footer-section">
-          <h4>Contatos:</h4>
+          <h4>Contatos</h4>
           <span>fausto.cruz@ucsal.edu.br</span> |
           <span>sarah.doria@ucsal.edu.br</span> |
           <span>itauan.jesus@ucsal.edu.br</span> |
           <span>caiofilipe.santos@ucsal.edu.br</span>
-      </div>
-      <div class="footer-section">
-          <h4>Informações</h4>
-          <p>&copy; 2024 - Todos os direitos reservados.</p>
-      </div>
+        </div>
+        <div class="footer-section">
+            <h4>Informações</h4>
+            <p>&copy; 2024 - Todos os direitos reservados.</p>
+        </div>
     </div>
 
   </footer>
+
+  <script src="../JS/menuHamgurger.js"></script>
 </body>
 </html>
