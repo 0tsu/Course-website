@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-h1, h4, p, span, .text{
+h1, h4, p, span, h3, a, .text{
     font-family: "JetBrains Mono", "Oxanium";
     color: #9FD923;
 }
@@ -107,7 +107,7 @@ nav .carrinho:hover{
 .footer-section span, 
 .footer-section a {
     color: #ccc;
-    font-size: 14px;
+    font-size: 1rem;
     text-decoration: none;
 }
 
@@ -135,6 +135,13 @@ nav .carrinho:hover{
 }
   
 @media only screen and (max-width:959px) {
+    .logo h3{
+        font-size: 1.8rem;
+    }
+    .logo img{
+        width: 3rem;
+        height: auto;
+    }
     nav .menu{
       height: 40%;
       margin: 0.5rem;
@@ -143,4 +150,38 @@ nav .carrinho:hover{
       height: 60%;
       margin: 0.5rem;
     }
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-section {
+        margin: 0.3rem;
+        flex: 1 1 80px;
+        max-width: 30rem;
+    }
 }
+
+@media only screen and (max-width:500px) {
+    .logo h3{
+      font-size: 1.3rem;
+    }
+    .logo img{
+      width: 2rem;
+      height: auto;
+    }
+    nav .menu{
+      height: 40%;
+      margin: 0.5rem;
+    }
+    nav .carrinho{
+      height: 40%;
+      margin: 0.5rem;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-section {
+        margin: 0.3rem;
+        flex: 1 1 80px;
+        max-width: 30rem;
+    }
+  }

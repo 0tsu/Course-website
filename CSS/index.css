@@ -33,26 +33,26 @@ main div{
   margin-left: 3.5rem;
 }
 main div h1{
-  font-size: 4rem;
+  font-size: 5rem;
   text-transform: capitalize;
 }
 
 main div .main-button{
-  font-size: larger;
+  font-size: 2rem;
   font-family: "Oxanium";
   font-weight: bolder;
   text-transform: uppercase;
-  margin-top: 3rem;
+  margin-top: 2rem;
   width: 70%;
-  height: 4rem;
+  height: 5rem;
 }
 
 figure{
   display: flex;
-  justify-content: end;
-  align-items: end;
+  justify-content: flex-end;
+  align-items: flex-end;
   width: 43%;
-  margin-right: 5rem;
+  margin-right: 2rem;
 }
 
 figure img{
@@ -64,19 +64,19 @@ figure img{
   width: 100%;
 }
 
-@media only screen and (min-width:1061px) {
+@media only screen and (max-width:1200px) {
   main div{
-    width: 40%;
+    width: 45%;
     margin-left: 3.5rem;
   }
 
   main div h1{
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   
   main div .main-button{
     margin-top: 3rem;
-    width: 70%;
+    width: 100%;
     clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%, 10% 0%);
     height: 5rem;
     font-size: 2rem;
@@ -84,7 +84,7 @@ figure img{
   
   figure{
     width: 43%;
-    margin-right: 5rem;
+    margin-right: 1rem;
   }
   
   figure img{
@@ -95,40 +95,54 @@ figure img{
   figure img{
     width: 100%;
   }
-
-  .logo h3{
-    font-family: "Oxanium";
-    font-size: 2.5rem;
-    font-weight: bolder;
-    text-transform: uppercase;
-  }
-  .logo img{
-    width: 4rem;
-    height: auto;
-  }
-
-  nav .menu{
-    height: 2.8rem;
-    margin-left: 2rem;
-  }
-  nav .carrinho{
-    height: 4rem;
-    margin-right: 2rem;
-  }
-  
 }
 
 @media only screen and (max-width:959px) {
   main div{
     width: 100%;
     margin-left: 1rem;
+    margin-top: 2rem;
+  }
+  main div h1{
+    font-size: 4rem;
+  }
+  
+  main div .main-button{
+    font-size: 2rem;
+    margin-top: 2rem;
+    clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%, 10% 0%);
+    height: 4rem;
+    width: 70%;
+  }
+  
+  figure{
+    width: 100%;
+    /* margin-right: 0rem; */
+    margin-top: 1rem;
+  }
+  
+  figure img{
+    max-width: 90%;
+    height: auto;
+  }
+  
+  figure img{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  main div{
+    width: 100%;
+    margin-left: 1rem;
+    margin-top: 2rem;
   }
   main div h1{
     font-size: 3rem;
   }
   
   main div .main-button{
-    font-size: larger;
+    font-size: 1.2rem;
     margin-top: 2rem;
     clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%, 10% 0%);
     height: 4rem;
@@ -138,24 +152,16 @@ figure img{
   figure{
     width: 100%;
     margin-right: 0rem;
+    margin-top: 1rem;
   }
   
   figure img{
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
   }
   
   figure img{
     width: 100%;
-  }
-
-  nav .menu{
-    height: 40%;
-    margin: 0.5rem;
-  }
-  nav .carrinho{
-    height: 60%;
-    margin: 0.5rem;
   }
 }
 
