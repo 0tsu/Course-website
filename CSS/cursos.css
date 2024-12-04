@@ -1,0 +1,88 @@
+main{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 1.5rem;
+}
+
+.card-title{
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #9FD923;
+    padding-left: 2rem;
+}
+
+.card-group{
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 1rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    padding-bottom: 1.5rem;
+    width: 20rem;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.card-info h1{
+    color: #0D0D0D;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.card-info h3{
+    color: #414141;
+    font-weight: normal;
+}
+
+.card-avaliacao{
+    display: flex;
+    gap: 1rem;
+    height: auto;
+}
+
+.card-avaliacao h3{
+    display: flex;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.card-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-btn a{
+    border-radius: 8px;
+    padding: 0.8rem;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.card-compra{
+    text-align: center;
+    text-decoration: none;
+    background-color: #3E2EA6;
+    color: #FFFFFF;
+}
+
+.card-carrinho{
+    text-align: center;
+    text-decoration: none;
+    border: 5px solid #3E2EA6;
+    color: #3E2EA6;
+    
+}

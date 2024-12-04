@@ -119,6 +119,7 @@ form div input{
 
 .cadastro-login, .login-cadastro{
     font-weight: bolder;
+    text-decoration: none;
 }
 
 .cadastro-active{
